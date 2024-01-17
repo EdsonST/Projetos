@@ -4,3 +4,17 @@
     box-sizing: border-box;
     font-family: 'Raleway', 'sans-serif';
 }
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+section.main{
+    background-image: url(./Imagens/bg.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+}
