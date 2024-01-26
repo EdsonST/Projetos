@@ -112,7 +112,168 @@ section.porquenos > .center > p{
     margin-bottom: 20px;
 }
 
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta h2{
+    font-size: 40px;
+}
+
+section.cta a{
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: orange;
+    text-decoration: none;
+    color: #0f3fd3
+}
+
+section.cta{
+    background-image: url('Imagens/banner_meio.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+}
+
+section.beneficios{
+    padding: 50px 0;
+}
+
+.lista{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.lista p{
+    vertical-align: middle;
+    font-size: 14px;
+    color: #7E92AC;
+}
+
+.lista img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.lista h1{
+    color: black;
+    font-size: 40px;
+}
+
+.lista span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.imgbeneficios{
+    width: 50%;
+}
+
+.imgbeneficios img{max-width: 100%;}
+
+section.beneficios > .center a{
+    display: inline-block;
+    padding: 9px 35px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #3d3dc3;
+    text-decoration: none;
+    color: white
+}
+
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding:40px 0;
+}
+
+section.depoimentos > h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-slider{
+    overflow:hidden;
+    padding:40px 0;   
+}
+
+.container-slider-single{
+    float: left;
+    background-color:white;
+    text-align: center;
+    padding:15px;
+    border-radius:10px;
+}
+
+.container-slider-single p{
+    margin:15px 0;
+    color:#7E92AC;
+    font-size: 14px;
+}
+
+.slick-slide {
+    margin-left:27px;
+
+  }
+
+  /* the parent */
+  .slick-list {
+    margin-left:-27px;
+   
+  }
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
+
 @media screen and (max-width:768px){
+    .lista, .imgbeneficios{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     .diferenciais{
         flex-wrap: wrap;
     }
