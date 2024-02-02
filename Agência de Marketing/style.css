@@ -231,7 +231,7 @@ section.depoimentos > h1{
    
   }
 
-/****SLICK SLIDER****/
+/*beggin slik slider*/
 
 .slick-dotted ul{
     display: block;
@@ -267,8 +267,136 @@ li.slick-active button{
 }
 
 .slick-slide:focus { outline: none; }
+/*Fim slik slider*/
+
+section.contato{
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.contato h1{
+    font-size: 50px;
+}
+
+section.contato form{
+    width: 100%;
+}
+
+.contato input[type=text],
+.contato input[type=email]{
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border-radius: 10px;    
+    background-color: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    padding-left: 10px;
+}
+
+.contato textarea{
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 10px;    
+    background-color: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    padding: 10px;
+    resize: vertical;
+}
+
+.contato input[type=submit]{
+    width: 100%;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background-color: #255AFF;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+footer{
+    background: #255AFF;
+    color: white;
+    padding: 10px 0;
+}
+
+.text-footer{
+    width: 50%;
+    padding: 8px 0;
+}
+
+.itens-menu-mobile{
+    display: none;
+    width: 50%;
+    text-align: right;
+}
+
+.itens-menu-mobile i{
+    color: white;
+    font-size: 23px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
 
 @media screen and (max-width:768px){
+    .itens-menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile{
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        width: 100%;
+        padding: 20px 0;
+        background-color: white;
+        text-align: center;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-align: center;
+        display: block;
+        margin: 10px 0;
+        color: #3d3dc3;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 0;
+    }
+
+    section.main .itensmenu{
+        display: none;
+    }
+
+    footer .itensmenu{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .itensmenu a{
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .text-footer{
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
     .lista, .imgbeneficios{
         width: 100%;
         margin-bottom: 30px;
